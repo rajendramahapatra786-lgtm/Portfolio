@@ -1,0 +1,281 @@
+/* =========================
+   responsive.css
+========================= */
+
+/* LARGE SCREENS */
+
+@media(max-width: 1400px) {
+
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* LAPTOP */
+
+@media(max-width: 1200px) {
+
+    section {
+        padding: 80px 8%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        gap: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 4.8rem;
+    }
+
+    .about-header h2,
+    .skills-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 4.5rem;
+    }
+}
+
+/* TABLET */
+
+@media(max-width: 1000px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .hero-desc {
+        margin-inline: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .about-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h2,
+    .skills-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 4rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* MOBILE LARGE */
+
+@media(max-width: 800px) {
+
+    section {
+        padding: 70px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-desc {
+        font-size: .95rem;
+    }
+
+    .glass-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-header h2,
+    .skills-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 3.5rem;
+    }
+
+    .project-image {
+        height: 240px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 600px) {
+
+    section {
+        padding: 65px 5%;
+    }
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .tag {
+        font-size: .8rem;
+        letter-spacing: 3px;
+    }
+
+    #typing {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .hero-socials {
+        gap: 15px;
+    }
+
+    .hero-socials a {
+        width: 55px;
+        height: 55px;
+        font-size: 1.2rem;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 220px;
+    }
+
+    .about-header h2,
+    .skills-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .about-card,
+    .contact-info-card,
+    .contact-form-card {
+        padding: 28px;
+    }
+
+    .about-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-top h3 {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card h1 {
+        font-size: 3.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-top h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .contact-info-card h3 {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        font-size: .95rem;
+    }
+
+    footer {
+        font-size: .9rem;
+        padding: 30px 20px;
+    }
+}
+
+/* EXTRA SMALL */
+
+@media(max-width: 400px) {
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header h2,
+    .skills-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .stat-card h1 {
+        font-size: 3rem;
+    }
+
+    .skill-icon,
+    .stat-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        padding: 22px;
+    }
+}
