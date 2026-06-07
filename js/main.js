@@ -60,3 +60,20 @@ if (particles) {
         particles.appendChild(particle);
     }
 }
+
+/* DOWNLOAD RESUME */
+
+function downloadResume() {
+
+    const link = document.createElement('a');
+
+    link.href = './files/resume.pdf';
+
+    link.download = 'Rajendra_Mahapatra_Resume.pdf';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
