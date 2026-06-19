@@ -67,7 +67,7 @@ function downloadResume() {
 
     const link = document.createElement('a');
 
-    link.href = './files/resume.pdf';
+    link.href = './files/RAJENDRA.pdf';
 
     link.download = 'Rajendra_Mahapatra_Resume.pdf';
 
