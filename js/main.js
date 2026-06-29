@@ -90,16 +90,24 @@ if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
+        const sendBtn = document.querySelector(".send-btn");
+        const originalBtn = sendBtn.innerHTML;
+
+        // show spinner
+        sendBtn.innerHTML = `<span class="loader"></span>`;
+
         emailjs.sendForm(
             "service_pfe3kxo",
             "template_8q6zcef",
             this
         )
             .then(() => {
+                sendBtn.innerHTML = originalBtn;
                 alert("[ TRANSMISSION SUCCESSFUL ]\nMESSAGE DELIVERED TO SERVER");
                 contactForm.reset();
             })
             .catch((error) => {
+                sendBtn.innerHTML = originalBtn;
                 alert("Failed to send message ❌");
                 console.log(error);
             });
