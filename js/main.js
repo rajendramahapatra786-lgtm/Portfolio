@@ -77,3 +77,31 @@ function downloadResume() {
 
     document.body.removeChild(link);
 }
+
+/* EMAILJS CONTACT FORM */
+
+(function () {
+    emailjs.init("knXZM5b18Noa5e-b5");
+})();
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_pfe3kxo",
+            "template_8q6zcef",
+            this
+        )
+            .then(() => {
+                alert("[ TRANSMISSION SUCCESSFUL ]\nMESSAGE DELIVERED TO SERVER");
+                contactForm.reset();
+            })
+            .catch((error) => {
+                alert("Failed to send message ❌");
+                console.log(error);
+            });
+    });
+}
