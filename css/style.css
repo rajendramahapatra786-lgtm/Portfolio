@@ -62,12 +62,15 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
 
-    background:
-        linear-gradient(to right,
-            var(--cyan),
-            var(--purple));
+    background: linear-gradient(
+        to right,
+        var(--cyan),
+        var(--purple)
+    );
 
+    background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
@@ -120,13 +123,15 @@ button {
 }
 
 .hero-text h1 span {
+    background: linear-gradient(
+        to right,
+        var(--cyan),
+        var(--purple)
+    );
 
-    background:
-        linear-gradient(to right,
-            var(--cyan),
-            var(--purple));
-
+    background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
