@@ -1,0 +1,334 @@
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-section {
+    padding:55px 0 90px;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.projects-header h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.projects-header h2 span {
+    color: #00e5ff;
+}
+
+.projects-line {
+    width: 100px;
+    height: 4px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    background: #00e5ff;
+
+    box-shadow:
+        0 0 10px #00e5ff,
+        0 0 20px #00e5ff;
+}
+
+/* .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+} */
+
+.project-card {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height:100%;
+
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(0, 229, 255, .03),
+            rgba(255, 255, 255, .01));
+
+    border: 1px solid rgba(0, 229, 255, .2);
+
+    backdrop-filter: blur(15px);
+
+    transition: .4s;
+}
+
+.project-image {
+    height: 210px;
+    overflow: hidden;
+}
+
+.project-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.project-content {
+
+    padding:20px 20px 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.project-top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.project-top h3 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.project-content p {
+
+    color: rgba(255, 255, 255, .75);
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+}
+
+.project-divider {
+
+    width: 100%;
+    height: 2px;
+
+    margin-bottom: 18px;
+
+    background:
+        linear-gradient(to right,
+            #00e5ff,
+            transparent);
+}
+
+.project-tech {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 2px;
+}
+
+/* =========================
+   PROJECT TECHNOLOGIES
+========================= */
+
+.project-tech {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.project-tech>span {
+
+    display: flex;
+    align-items: center;
+}
+
+.tech-icon {
+
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin-right: 8px;
+}
+
+.tech-icon svg {
+
+    width: 18px;
+    height: 18px;
+
+    color: #00e5ff;
+}
+
+.tech-name {
+
+    color: #00e5ff;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+.project-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: auto;
+}
+
+.project-buttons a {
+
+    flex: 1;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.github-btn {
+
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    background: rgba(255, 255, 255, .05);
+}
+
+.live-btn {
+
+    color: black;
+
+    background:
+        linear-gradient(to right,
+            #00e5ff,
+            #00bfff);
+}
+
+/* Hover */
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(0, 229, 255, .5);
+
+    box-shadow:
+        0 0 40px rgba(0, 229, 255, .15);
+}
+
+.project-card:hover img {
+    transform: scale(1.08);
+}
+
+.github-btn:hover {
+
+    color: #00e5ff;
+
+    border-color: #00e5ff;
+}
+
+.live-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(0, 229, 255, .35);
+}
+
+.project-link{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    color:#00e5ff;
+
+    text-decoration:none;
+
+    border:1px solid rgba(0,229,255,.25);
+
+    background:rgba(0,229,255,.05);
+
+    transition:.35s;
+}
+
+.project-link:hover{
+
+    transform:translateY(-4px);
+
+    color:#fff;
+
+    border-color:#00e5ff;
+
+    box-shadow:0 0 20px rgba(0,229,255,.3);
+}
+
+@media (max-width:991.98px){
+
+    .projects-header h2{
+        font-size:3.2rem;
+    }
+
+}
+
+@media (max-width:575.98px){
+
+    .projects-header h2{
+        font-size:2.5rem;
+    }
+
+    .project-image{
+        height:180px;
+    }
+
+    .project-top h3{
+        font-size:1.4rem;
+    }
+
+    .project-content{
+        padding:18px;
+    }
+
+    .project-link{
+        width:42px;
+        height:42px;
+    }
+
+}

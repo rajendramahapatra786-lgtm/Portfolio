@@ -1,0 +1,118 @@
+/* =========================
+   FLOATING HERO CARD
+========================= */
+
+@keyframes levitate {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.glass-card{
+    animation: levitate 5s ease-in-out infinite;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.resume-btn,
+.send-btn{
+    transition:.3s ease;
+}
+
+.resume-btn:hover,
+.send-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(0,229,255,.35);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.about-card,
+.stat-card,
+.skill-card,
+.project-card,
+.contact-info-card,
+.contact-form-card{
+
+    transition:.35s ease;
+}
+
+.about-card:hover,
+.stat-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.contact-info-card:hover,
+.contact-form-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(0,229,255,.45);
+
+    box-shadow:0 0 25px rgba(0,229,255,.15);
+}
+
+/* =========================
+   SKILL ICON
+========================= */
+
+.skill-icon{
+    transition:.35s;
+}
+
+.skill-card:hover .skill-icon{
+    transform:scale(1.1);
+}
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image{
+    overflow:hidden;
+}
+
+.project-image img{
+    transition:.5s;
+}
+
+.project-card:hover .project-image img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.hero-socials a,
+.footer-socials a{
+
+    transition:.35s ease;
+}
+
+.hero-socials a:hover,
+.footer-socials a:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+    color:#00e5ff;
+
+    box-shadow:0 0 20px rgba(0,229,255,.35);
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-img{
+
+    transition:.35s;
+}
+
+.profile-img:hover{
+
+    transform:scale(1.04);
+}

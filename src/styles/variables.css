@@ -1,0 +1,39 @@
+:root {
+
+    /* ===== COLORS ===== */
+
+    --bg: #050505;
+
+    --card: rgba(255,255,255,0.05);
+
+    --border: rgba(255,255,255,0.10);
+
+    --cyan: #00e5ff;
+
+    --purple: #8b5cf6;
+
+    --text: rgba(255,255,255,0.70);
+
+    --white: #ffffff;
+
+    --black: #000000;
+
+    /* ===== TYPOGRAPHY ===== */
+
+    --font-family: "Space Grotesk", sans-serif;
+
+    /* ===== BORDER RADIUS ===== */
+
+    --radius-sm: 12px;
+
+    --radius-md: 18px;
+
+    --radius-lg: 30px;
+
+    --radius-round: 50px;
+
+    /* ===== TRANSITION ===== */
+
+    --transition: .4s ease;
+
+}
