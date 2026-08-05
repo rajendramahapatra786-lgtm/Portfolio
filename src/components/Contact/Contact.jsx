@@ -34,7 +34,7 @@ function Contact() {
                 form.current
             )
             .then(() => {
-                alert("[ TRANSMISSION SUCCESSFUL ]\nMESSAGE DELIVERED TO SERVER");
+                alert("[ Thank you for reaching out. ]\nI'll get back to you soon.");
                 form.current.reset();
                 setSending(false);
             })

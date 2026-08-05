@@ -60,12 +60,12 @@ function About() {
                             </p>
 
                             <p>
-                                I enjoy building clean, scalable software while continuously
-                                learning new technologies....My approach combines clean code architecture with
-                                cutting-edge UI/UX principles, delivering solutions
-                                that are both powerful and visually stunning...My approach combines clean code architecture with
-                                cutting-edge UI/UX principles, delivering solutions
-                                that are both powerful and visually stunning.
+                                I enjoy solving real-world problems through code and transforming 
+                                ideas into modern web applications. I'm always eager to learn new technologies,
+                                improve my development skills, and build projects that make a meaningful impact.
+                                My goal is to create fast, secure, and user-friendly applications while continuously
+                                growing as a Full Stack Developer, embracing new challenges, collaborating effectively, 
+                                and delivering innovative solutions that create real value for users and businesses.
                             </p>
 
                             <div className="bottom-lines">
