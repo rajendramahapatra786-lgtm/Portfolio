@@ -4,6 +4,8 @@ import TypingText from "./TypingText";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaFileDownload } from "react-icons/fa";
+import { socialLinks } from "../../data/socialLinks";
+
 
 import {
     faGithub,
@@ -54,8 +56,7 @@ function Hero() {
                             </a>
 
                             <a
-                                href="/files/Rajendra_Mahapatra_Resume.pdf"
-                                download
+                                href={`${import.meta.env.BASE_URL}files/Rajendra_Mahapatra_Resume.pdf`} download
                                 className="secondary secondary-btn"
                             >
                                 Download Resume
@@ -65,39 +66,17 @@ function Hero() {
                         </div>
 
                         <div className="hero-socials">
-
-                            <a
-                                href="https://github.com/your-github"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-
-                            <a
-                                href="https://linkedin.com/in/your-linkedin"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-
-                            <a
-                                href="https://x.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <FontAwesomeIcon icon={faXTwitter} />
-                            </a>
-
-                            <a
-                                href="https://instagram.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <FontAwesomeIcon icon={faInstagram} />
-                            </a>
-
+                            {socialLinks.map((social) => (
+                                <a
+                                    key={social.name}
+                                    href={social.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={social.name}
+                                >
+                                    <FontAwesomeIcon icon={social.icon} />
+                                </a>
+                            ))}
                         </div>
 
                     </div>

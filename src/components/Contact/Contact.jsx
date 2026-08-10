@@ -92,26 +92,26 @@ function Contact() {
 
                             <div className="contact-item">
                                 <FaGithub />
-                                <span>github.com/your-github</span>
+                                <span>rajendramahapatra786-lgtm</span>
                             </div>
 
                             <div className="contact-item">
                                 <FaLinkedin />
-                                <span>linkedin.com/in/your-linkedin</span>
+                                <span>rajendra-mahapatra-01b49830a</span>
                             </div>
 
                             <div className="contact-item">
                                 <FaInstagram />
-                                <span>instagram.com/your-instagram</span>
+                                <span>rajendra_mahapatra6</span>
                             </div>
 
                             <a
-                                href="/files/Rajendra_Mahapatra_Resume.pdf"
-                                download
+                                href={`${import.meta.env.BASE_URL}files/Rajendra_Mahapatra_Resume.pdf`}
+                                download="Rajendra_Mahapatra_Resume.pdf"
                                 className="resume-btn"
                             >
-                                Download Resume
                                 <FaFileDownload />
+                                <span>Download Resume</span>
                             </a>
 
                         </div>
@@ -134,13 +134,13 @@ function Contact() {
                                     type="text"
                                     name="from_name"
                                     placeholder="Your Name"
-                                    required/>
+                                    required />
 
                                 <input
                                     type="email"
                                     name="from_email"
                                     placeholder="Your Email"
-                                    required/>
+                                    required />
 
                                 <textarea
                                     rows="6"
