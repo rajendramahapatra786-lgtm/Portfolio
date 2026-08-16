@@ -36,7 +36,7 @@ export const projects = [
       { icon: FaLock, name: "OTP Auth" },
     ],
 
-    github: "YOUR_GITHUB_LINK",
+    github: "https://github.com/rajendramahapatra786-lgtm/AnimeStreet.git",
   },
 
   {
@@ -51,7 +51,7 @@ export const projects = [
       { icon: SiOpencv, name: "OpenCV" },
     ],
 
-    github: "YOUR_GITHUB_LINK",
+    github: "https://github.com/rajendramahapatra786-lgtm/Cyber_Face_Auth_System.git",
   },
 
   {
@@ -67,6 +67,6 @@ export const projects = [
     //   { icon: FaBootstrap, name: "Bootstrap" },
     ],
 
-    github: "YOUR_GITHUB_LINK",
+    github: "https://github.com/rajendramahapatra786-lgtm/Secure-Web-Voting-System.git",
   },
 ];
