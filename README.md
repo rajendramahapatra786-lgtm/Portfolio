@@ -218,6 +218,3 @@ This portfolio can be deployed on:
 
 ---
 
-# ⭐ Support
-
-If you like this project, please consider giving it a ⭐ on GitHub.
