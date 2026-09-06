@@ -7,11 +7,11 @@ function Skills() {
     return (
         <section
             className="skills-section"
-            id="skills"
-            data-aos="fade-up">
+            id="skills">
+
             <div className="container">
 
-                <div className="skills-header">
+                <div className="skills-header" data-aos="fade-up" >
 
                     <h2>
                         Technical <span>Expertise</span>
@@ -29,7 +29,7 @@ function Skills() {
                             <SkillCard
                                 key={index}
                                 skill={skill}
-                                index={index}/>                        </div>
+                                index={index} />                        </div>
                     ))}
 
                 </div>

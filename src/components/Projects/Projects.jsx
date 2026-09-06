@@ -7,9 +7,10 @@ function Projects() {
     return (
         <section
             className="projects-section"
-            id="projects"
-            data-aos="fade-up">
-            <div className="container">
+            id="projects">
+
+
+            <div className="container" data-aos="fade-up">
 
                 <div className="projects-header">
 

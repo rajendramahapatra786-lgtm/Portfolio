@@ -12,10 +12,9 @@ function About() {
     return (
         <section
             className="about-section"
-            id="about"
-            data-aos="fade-up">
+            id="about">
 
-            <div className="container">
+            <div className="container" data-aos="fade-up">
 
                 {/* Heading */}
 
@@ -60,11 +59,11 @@ function About() {
                             </p>
 
                             <p>
-                                I enjoy solving real-world problems through code and transforming 
+                                I enjoy solving real-world problems through code and transforming
                                 ideas into modern web applications. I'm always eager to learn new technologies,
                                 improve my development skills, and build projects that make a meaningful impact.
                                 My goal is to create fast, secure, and user-friendly applications while continuously
-                                growing as a Full Stack Developer, embracing new challenges, collaborating effectively, 
+                                growing as a Full Stack Developer, embracing new challenges, collaborating effectively,
                                 and delivering innovative solutions that create real value for users and businesses.
                             </p>
 

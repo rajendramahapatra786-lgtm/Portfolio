@@ -49,10 +49,9 @@ function Contact() {
     return (
         <section
             className="contact-section"
-            id="contact"
-            data-aos="fade-up">
+            id="contact">
 
-            <div className="container">
+            <div className="container"   data-aos="fade-up">
 
                 {/* Heading */}
 
